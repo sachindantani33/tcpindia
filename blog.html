@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+             body{
+    background-color: black;
+   }
+   /* Topbar */
+    .header-1 {
+      background: rgb(61, 60, 59);
+    }
+
+    .header-1 p {
+      font-size: 14px;
+    }
+
+    /* Navbar */
+    .header-2 {
+      background: #121212;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+    }
+
+    /* Navbar Links */
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-size: 18px;
+      font-weight: 500;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    /* Hover underline animation */
+    .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: #00ffd5;
+      transition: 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+      width: 100%;
+    }
+
+    /* Active link color */
+    .navbar-nav .nav-link.active {
+      color: #00ffd5 !important;
+      font-weight: 600;
+    }
+
+    /* Mobile Hamburger Icon */
+    .navbar-toggler {
+      font-size: 22px;
+      border: none;
+      color: white;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+
+    .blog-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+.blog-card img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+      <!-- Header Section -->
+  <header>
+    <!-- ✅ Topbar -->
+    <div class="header-1 py-1">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <p class="text-white m-0 small">
+          One Stop solutions for your career
+        </p>
+        <p class="text-white m-0 small">
+          <i class="fa-regular fa-envelope me-2"></i> hello@tcpindia.in
+          <span class="ms-3"><i class="fa-solid fa-phone me-1"></i> +91 9099775550</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg header-2">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand text-white fw-bold" href="#">
+          <img src="images/Group-63.png" alt="Logo" height="60" class="me-2">
+        </a>
+
+        <!-- Hamburger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
+            <li class="nav-item"><a class="nav-link" href="tcpindia.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="corces.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Login Button -->
+          <a href="#" class="btn btn-primary btn-sm ms-lg-3 px-4 rounded-pill">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <!-- ====== Blog Section Start ====== -->
+<div class="blog-section py-5 bg-dark text-white">
+  <div class="container">
+    <!-- Section Heading -->
+    <h2 class="text-center mb-4 fw-bold text-warning">Latest Tech Blogs</h2>
+    <p class="text-center text-secondary mb-5">
+      Stay updated with the latest insights in IT, Software & Technology.
+    </p>
+
+    <!-- Blog Row -->
+    <div class="row g-4">
+      
+      <!-- Blog 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-secondary text-white shadow-lg border-0 rounded-4 overflow-hidden blog-card">
+          <img src="images/ai" class="card-img-top" alt="AI Future">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">Artificial Intelligence</span>
+            <h5 class="card-title fw-bold">Future of Artificial Intelligence</h5>
+            <p class="card-text text-light">
+              Explore how AI is transforming industries, automating processes, and reshaping the future of work.
+            </p>
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-secondary text-white shadow-lg border-0 rounded-4 overflow-hidden blog-card">
+          <img src="images/technology-communication.avif" class="card-img-top" alt="Web Development">
+          <div class="card-body">
+            <span class="badge bg-info text-dark mb-2">Web Development</span>
+            <h5 class="card-title fw-bold">Top Web Development Trends 2025</h5>
+            <p class="card-text text-light">
+              Discover the latest technologies, frameworks, and tools shaping modern web development in 2025.
+            </p>
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 bg-secondary text-white shadow-lg border-0 rounded-4 overflow-hidden blog-card">
+          <img src="images/cyber-security-team.jpg" class="card-img-top" alt="Cybersecurity">
+          <div class="card-body">
+            <span class="badge bg-danger mb-2">Cybersecurity</span>
+            <h5 class="card-title fw-bold">Cybersecurity in the Digital Era</h5>
+            <p class="card-text text-light">
+              Learn why cybersecurity is more important than ever and how organizations can protect themselves.
+            </p>
+            <a href="#" class="btn btn-outline-light rounded-pill">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
